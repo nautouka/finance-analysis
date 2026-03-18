@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Data Analytics Portfolio</title>
+    <style>
+        :root { --primary: #0f172a; --accent: #2563eb; --text: #334155; --bg: #f8fafc; }
+        body { font-family: 'Inter', -apple-system, system-ui, sans-serif; background: #ffffff; color: var(--text); line-height: 1.7; margin: 0; }
+        
+        /* Clean Header */
+        header { background: var(--bg); padding: 90px 20px; text-align: center; border-bottom: 1px solid #e2e8f0; }
+        .hero-title { font-size: 2.6rem; font-weight: 800; color: var(--primary); margin: 0; letter-spacing: -1.5px; }
+        .hero-subtitle { font-size: 1.15rem; color: #64748b; margin-top: 15px; max-width: 800px; margin-left: auto; margin-right: auto; font-weight: 400; }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+        .project { margin-bottom: 110px; }
+        .project-title { font-size: 1.75rem; color: var(--primary); margin-bottom: 25px; display: flex; align-items: center; font-weight: 700; }
+        .project-title::before { content: ""; width: 4px; height: 26px; background: var(--accent); margin-right: 15px; border-radius: 2px; }
+        
+        /* Visual Display */
+        .img-container { background: #fff; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.06); border: 1px solid #e5e7eb; overflow: hidden; margin-bottom: 35px; transition: transform 0.3s ease; }
+        .img-container:hover { transform: translateY(-5px); }
+        .img-container img { width: 100%; display: block; }
+
+        /* Content Layout */
+        .content-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 45px; }
+        .feature-box h4 { color: var(--primary); margin: 0 0 12px 0; font-size: 1.15rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        .feature-box p { font-size: 1rem; color: #475569; margin: 0; }
+        
+        /* Professional Tags */
+        .tech-tag { display: inline-block; background: #f1f5f9; color: #475569; padding: 4px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; margin-bottom: 12px; text-transform: uppercase; }
+        
+        footer { text-align: center; padding: 50px; border-top: 1px solid #f1f5f9; color: #94a3b8; font-size: 0.9rem; letter-spacing: 1px; }
+        @media (max-width: 768px) { .content-grid { grid-template-columns: 1fr; gap: 30px; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="hero-title">Financial Data Analytics Portfolio</h1>
+    <p class="hero-subtitle">
+        Transforming complex financial data into high-impact business visuals. 
+        Focused on <strong>automated financial reporting</strong>, <strong>variance analysis</strong>, and <strong>interactive decision support</strong> using advanced Power BI techniques.
+    </p>
+</header>
+
+    <div class="container">
+
+        <section class="project">
+            <span class="tech-tag">Financial Position & Liquidity</span>
+            <h2 class="project-title">Automated Balance Sheet Monitor</h2>
+            
+            <div class="img-container">
+                <img src="balance_sheet.png" alt="Automated Balance Sheet Monitor">
+            </div>
+
+            <div class="content-grid">
+                <div class="feature-box">
+                    <h4>Core Functionality</h4>
+                    <p>By leveraging <b>Time-Intelligence slicers</b>, this dashboard allows stakeholders to instantly track shifts in Assets, Liabilities, and Equity across different fiscal periods. It replaces static reporting with a dynamic interface for real-time capital structure oversight.</p>
+                </div>
+                <div class="feature-box">
+                    <h4>Strategic Value</h4>
+                    <p>Enables proactive monitoring of critical solvency metrics, including <b>Current Ratio</b> and <b>Debt-to-Asset Ratio</b>, ensuring accurate assessment of the organization's financial health at any given moment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project">
+            <span class="tech-tag">Profitability & Budget Control</span>
+            <h2 class="project-title">P&L Variance & Sensitivity Insights</h2>
+            
+            <div class="img-container">
+                <img src="pl_analysis.png" alt="P&L Variance Analysis">
+            </div>
+
+            <div class="content-grid">
+                <div class="feature-box">
+                    <h4>Analytic Logic</h4>
+                    <p>Utilises <b>Waterfall Chart attribution</b> to bridge the gap between Gross Profit and Operating Income. The interactive design tracks how specific expense fluctuations impact the bottom line, facilitating immediate budget adjustments and forensic cost analysis.</p>
+                </div>
+                <div class="feature-box">
+                    <h4>Decision Support</h4>
+                    <p>Provides a "What-if" perspective on profitability by quantifying the marginal contribution of individual cost centres (Selling, Admin, Financial), supporting more agile resource allocation.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>POWER BI | SQL | FINANCIAL MODELLING PORTFOLIO</p>
+    </footer>
+
+</body>
+</html>
